@@ -13,6 +13,9 @@ interface Props {
 export const ActiveLink = ({path, text}: Props) => {
     const patchName = usePathname();
     return (
-        <Link className={`${style.link} ${(patchName === path) && style['active-link']}`} href={path}>{text}</Link>
+        <Link
+            className={`${style.link} ${(patchName === path) && style['active-link']} block mt-4 lg:inline-block lg:mt-0 mr-4`} href={path}>
+            {text}
+        </Link>
     )
 }

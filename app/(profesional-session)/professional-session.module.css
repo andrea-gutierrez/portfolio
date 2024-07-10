@@ -1,0 +1,18 @@
+.subtitle {
+    color: #FFFFFF; /* Bright White for section heading */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main--content {
+    background-color: #333333; /* Dark Gray for section background */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.main--content p {
+    color: #FFFFFF; /* Bright White for section text */
+    font-size: 18px;
+    line-height: 1.6;
+}
