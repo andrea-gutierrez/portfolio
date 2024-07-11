@@ -29,11 +29,7 @@ body {
     background: linear-gradient(135deg, #121212, #1A1A1A);
     color: #FFFFFF; /* Bright white text color for contrast */
     margin: 0; /* Removes default margin */
-    padding: 20px; /* Adds padding for content */
-}
-
-.main--bg {
-    /*background: linear-gradient(135deg, #121212, #1A1A1A);*/
+    /*padding: 20px; !* Adds padding for content *!*/
 }
 
 h1 {

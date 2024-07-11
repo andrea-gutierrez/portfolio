@@ -4,15 +4,68 @@
     margin-bottom: 10px;
 }
 
+.main--section {
+    border-radius: 15px 15px 15px;
+    object-fit: cover;
+    --s: 50px; /* the size on the corner */
+    --t: 5px; /* the thickness of the border */
+    --g: 20px; /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #FF9800; /* the color here */
+    outline-offset: calc(-1 * var(--t));
+    mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+    transition: .4s;
+}
+
 .main--content {
-    background-color: #333333; /* Dark Gray for section background */
+    max-width: 85%;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
 }
 
 .main--content p {
     color: #FFFFFF; /* Bright White for section text */
     font-size: 18px;
     line-height: 1.6;
+}
+
+.tech-category {
+    margin-bottom: 30px;
+}
+
+.tech-category h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00BCD4;
+    padding-bottom: 5px;
+    color: #00BCD4; /* Cyan color for category titles */
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tech-stack .tech-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tech-stack .tech-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tech-stack .tech-item .tech-name {
+    font-size: 18px;
+    padding-left: 3px;
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main
-            className="flex flex-row gap-5 justify-center my-auto h-screen main--bg">
+            className="flex flex-row gap-5 justify-center my-auto h-screen">
             <div className="flex flex-col w-1/2 justify-center gap-5">
                 <div className="flex flex-col items-center justify-center">
                     <h1>Hi there, I am <span
