@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main
-            className="flex flex-col-reverse m-2 md:flex-row gap-5 justify-center min-h-screen">
+            className="flex flex-col-reverse m-2 md:m-0 md:flex-row gap-5 justify-center md:h-screen">
             <div className="flex flex-col md:w-1/2 justify-center gap-5">
                 <div className="flex flex-col items-center justify-center">
                     <h1>Hi there, I am <span
@@ -26,7 +26,7 @@ export default function Home() {
                 </ul>
             </div>
             <div className="profile--container--image">
-                <Image className="profile--image" height={400} width={400}
+                <Image className="profile--image w-[300px] md:w-[350px]" height={0} width={0}
                        sizes="100vw" priority={true} alt="maribel_profile"
                        src="/images/profile/maribel.jpeg"/>
             </div>
