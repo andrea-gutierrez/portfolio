@@ -1,0 +1,64 @@
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #00BCD4; /* Cyan color for the section title */
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #00BCD4; /* Cyan color for the icons */
+}
+
+.contact-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #00BCD4; /* Cyan color on hover */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #AAAAAA;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00BCD4;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #008C9E; /* Darker cyan on hover */
+}
