@@ -26,9 +26,9 @@ export default function Home() {
                 </ul>
             </div>
             <div className="profile--container--image">
-                <Image className="profile--image" height={250} width={250}
+                <Image className="profile--image" height={400} width={400}
                        sizes="100vw" priority={true} alt="maribel_profile"
-                       src="/images/profile/maribel_1.jpg"/>
+                       src="/images/profile/maribel.jpeg"/>
             </div>
         </main>
     );
