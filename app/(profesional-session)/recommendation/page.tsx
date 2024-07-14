@@ -23,7 +23,7 @@ export default function RecommendationPage() {
                 </p>
             </div>
 
-            <div className="m-6">
+            <div className="m-3 md:m-6">
                 {
                     RECOMMENDATION_LIST.map(recommendation => (
                         <Blockquote key={recommendation.author} {...recommendation} />
