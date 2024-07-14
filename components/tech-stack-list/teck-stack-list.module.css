@@ -1,0 +1,36 @@
+.tech-category {
+    margin-bottom: 30px;
+}
+
+.tech-category h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00BCD4;
+    padding-bottom: 5px;
+    color: #00BCD4; /* Cyan color for category titles */
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tech-stack .tech-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tech-stack .tech-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tech-stack .tech-item .tech-name {
+    font-size: 18px;
+    padding-left: 3px;
+}

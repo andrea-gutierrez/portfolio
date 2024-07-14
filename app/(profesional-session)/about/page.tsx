@@ -2,18 +2,23 @@ import style from '../professional-session.module.css';
 
 import {
     faHtml5,
-    faCss3Alt,
     faJs,
     faCss3,
     faPython,
     faNode,
     faAngular,
-    faReact
+    faReact, faGit, faGithub
 } from '@fortawesome/free-brands-svg-icons'
-import {faQuestion} from "@fortawesome/free-solid-svg-icons";
-import {IconList} from "@/components/icon-list/IconList";
+import {faDatabase, faCode, IconDefinition} from "@fortawesome/free-solid-svg-icons";
+import {TechStackList} from "@/components";
+import Image from "next/image";
 
-const languages = [
+interface IconName {
+    icon: IconDefinition;
+    name: string;
+}
+
+const languages: IconName[] = [
     {
         icon: faHtml5,
         name: 'HTML5'
@@ -35,12 +40,12 @@ const languages = [
         name: 'NodeJS'
     },
     {
-        icon: faQuestion,
+        icon: faCode,
         name: 'C++'
     }
 ]
 
-const frameworks = [
+const frameworks: IconName[] = [
     {
         icon: faAngular,
         name: 'Angular'
@@ -50,38 +55,100 @@ const frameworks = [
         name: 'React'
     },
     {
-        icon: faQuestion,
+        icon: faCode,
         name: 'Svelte'
     },
     {
-        icon: faQuestion,
+        icon: faCode,
         name: 'NextJs'
     },
+    {
+        icon: faCode,
+        name: 'NestJs'
+    }
 ]
 
-export const metadata = {
-    title: "About",
-    description: 'Information about Maribel',
-    keywords: 'CSS3, HTML5, Angular, NextJS, NodeJS, Javascript'
-}
+const database: IconName[] = [
+    {
+        icon: faDatabase,
+        name: 'MySQL'
+    },
+    {
+        icon: faCode,
+        name: 'MongoDB'
+    }
+]
+
+const tools: IconName[] = [
+    {
+        icon: faGit,
+        name: 'git'
+    },
+    {
+        icon: faGithub,
+        name: 'GitHub'
+    }
+]
+
+const testing: IconName[] = [
+    {
+        icon: faCode,
+        name: 'Jest'
+    },
+    {
+        icon: faCode,
+        name: 'Cypress'
+    },
+    {
+        icon: faCode,
+        name: 'Karma'
+    }
+]
 
 export default function AboutPage() {
     return (
         <>
-            <section className={style["main--section"]}>
-                <h1 className={style.subtitle}>About me</h1>
-                <p>I am a senior fullstack developer with more than 6 years of experience in the software development,
-                    IoT
-                    and the automation industry. </p>
-                <p>I am a software developer who has had the opportunity to work in a start--ups and also in a
-                    multinational company which had given me the opportunity to be in all the life cycle of a software.
-                    I have been in different positions such as developer designer, taking the business requirements</p>
+            <section className={`${style["main--section"]} flex flex-col md:flex-row gap-3`}>
+                <div className="info">
+                    <h1 className={style.subtitle}>About me</h1>
+                    <p>I'am Maribel, a passionate frontend developer with over 6 years of experience in crafting
+                        visually
+                        stunning and highly functional web applications. My journey began with a foundation in
+                        electronic
+                        engineering, which provided me with a deep understanding of both hardware and software. However,
+                        it
+                        was in the realm of frontend development where I truly found my calling.
+                    </p>
+                    <br/>
+                    <p>I thrive on bringing designs to life with clean, efficient, and scalable code. My experience
+                        includes leading frontend development initiatives that enhance application performance and
+                        scalability, collaborating closely with UX/UI designers to transform design concepts into
+                        pixel-perfect implementations. One of my proudest achievements is working on innovative projects
+                        that address real-world problems, such as the Eira Respiratory Equipment during the COVID-19
+                        pandemic, where I integrated intuitive software interfaces with robust hardware to create
+                        life-saving devices. Beyond my technical skills, I am a proactive problem-solver who enjoys
+                        learning
+                        and staying up-to-date with the latest industry trends. Let's connect and explore how we can
+                        create
+                        beautiful, high-performing web applications together!</p>
+
+                </div>
+                <Image src="/images/projects/python_interface.jpg" alt="maribel_working" height={200} width={200}
+                       style={{objectFit: 'cover'}}/>
             </section>
 
-            <section>
-                <IconList items={languages} title={'Languages'}/>
+            <section
+                className="transition ease-in-out duration-500 delay-150 hover:-translate-y-1 hover:scale-105 flex flex-row flex-wrap hover:flex-wrap-reverse gap-2 justify-around m-6">
 
-                <IconList items={frameworks} title={'Frameworks'}/>
+                <TechStackList items={tools} title={'Tools'}/>
+
+                <TechStackList items={database} title={'Databases'}/>
+
+                <TechStackList items={testing} title={'Testing Frameworks and Libraries'}/>
+
+                <TechStackList items={frameworks} title={'Frameworks'}/>
+
+                <TechStackList items={languages} title={'Languages'}/>
             </section>
 
         </>
