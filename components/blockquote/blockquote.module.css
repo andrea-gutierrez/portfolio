@@ -1,0 +1,33 @@
+.recommendation {
+    margin-bottom: 30px;
+}
+
+.recommendation blockquote {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0;
+    font-style: italic;
+    border-left: 5px solid #00BCD4; /* Cyan border on the left */
+}
+
+.recommendation blockquote p {
+    margin: 0;
+}
+
+.recommendation .author {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    color: #808080; /* Light gray color for the author */
+}
+
+.show-more {
+    color: #00BCD4;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
