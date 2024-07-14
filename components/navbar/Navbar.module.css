@@ -3,19 +3,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #333333;
     padding: 10px 20px;
     border-bottom: 2px solid #00BCD4; /* Cyan bottom border */
 }
 
 .navbar a {
-    color: #FFFFFF;
+    color: #00BCD4;
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #00BCD4; /* Cyan color on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
