@@ -7,7 +7,7 @@ export default function ProfessionalSessionsLayout({children}: { children: React
     return (
         <>
             <Navbar/>
-            <main className={`${style['main--content']} min-h-screen m-2 md:m-6`}>
+            <main className={`${style['main--content']} min-h-[calc(100vh-49.6px)] m-2 md:m-6`}>
                 {children}
             </main>
         </>

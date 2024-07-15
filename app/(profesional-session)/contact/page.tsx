@@ -1,5 +1,9 @@
-import style from '../professional-session.module.css';
 import contactStyle from './contact.module.css';
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+
 
 export default function ContactPage() {
     return (
@@ -10,34 +14,25 @@ export default function ContactPage() {
                 <h2>Get in Touch</h2>
                 <p>Feel free to reach out to me via any of the following methods:</p>
 
-                <div className={`${contactStyle["contact-item"]}`}>
-                    <i className="fa fa-envelope"></i>
+                <div className={`${contactStyle["contact-item"]} mt-2`}>
+                    <FontAwesomeIcon icon={faEnvelope} width={15} height={15}/>
                     <a href="mailto:maribell426@hotmail.com">maribell426@hotmail.com</a>
                 </div>
 
                 <div className={`${contactStyle["contact-item"]}`}>
-                    <i className="fa fa-phone"></i>
+                    <FontAwesomeIcon icon={faPhone} width={15} height={15}/>
                     <a href="tel:+61435326510">+61435326510</a>
                 </div>
 
                 <div className={`${contactStyle["contact-item"]}`}>
-                    <i className="fa fa-linkedin"></i>
+                    <FontAwesomeIcon icon={faLinkedin} width={15} height={15}/>
                     <a href="https://www.linkedin.com/in/maribel-gutierrez/" target="_blank">LinkedIn Profile</a>
                 </div>
 
                 <div className={`${contactStyle["contact-item"]}`}>
-                    <i className="fa fa-github"></i>
+                    <FontAwesomeIcon icon={faGithub} width={15} height={15}/>
                     <a href="https://github.com/andrea-gutierrez" target="_blank">GitHub Profile</a>
                 </div>
-
-                <h2>Send a Message</h2>
-                <form className={`${contactStyle["contact-form"]}`} action="https://formspree.io/f/{your-form-id}"
-                      method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required/>
-                    <input type="email" name="_replyto" placeholder="Your Email" required/>
-                    <textarea name="message" placeholder="Your Message" rows={5} required></textarea>
-                    <button type="submit">Send</button>
-                </form>
             </div>
         </>
     )

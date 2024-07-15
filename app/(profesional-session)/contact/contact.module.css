@@ -11,22 +11,27 @@
 }
 
 .contact-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .contact-item i {
-    margin-right: 10px;
-    color: #00BCD4; /* Cyan color for the icons */
+    margin-right: 15px;
+    color: #00BCD4; /* Cyan color for icons */
+    font-size: 1.5em;
 }
 
 .contact-item a {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding-left: 10px;
 }
 
 .contact-item a:hover {
     color: #00BCD4; /* Cyan color on hover */
+    text-decoration: underline;
 }
 
 .contact-form {
