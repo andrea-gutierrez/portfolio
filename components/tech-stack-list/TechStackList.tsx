@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import style from "./teck-stack-list.module.css";
+import style from "./TechStackList.module.css";
 
 export const TechStackList = ({items, title}: { items: { icon: any; name: string }[], title: string }) => {
     return (

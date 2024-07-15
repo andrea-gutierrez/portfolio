@@ -15,11 +15,21 @@
     margin: 0;
 }
 
-.recommendation .author {
+.author {
     margin-top: 10px;
     font-size: 14px;
     font-style: normal;
     color: #808080; /* Light gray color for the author */
+}
+
+.author a {
+    color: #00BCD4; /* Cyan color for LinkedIn link */
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.author a:hover {
+    text-decoration: underline;
 }
 
 .show-more {
@@ -30,4 +40,15 @@
 
 .show-more:hover {
     text-decoration: underline;
+}
+
+.separator {
+    height: 2px;
+    background-color: #B0BEC5;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.separator:last-child {
+    all: unset;
 }

@@ -1,15 +1,11 @@
-interface Recommendation {
-    author: string;
-    company: string;
-    message: string;
-    profession: string;
-}
+import {Recommendation} from "./interfaces/recommendation.interface";
 
 
 export const RECOMMENDATION_LIST: Recommendation[] = [
     {
         author: 'Guillermo Guirales',
         company: 'Globant',
+        linkedinUrl: 'https://www.linkedin.com/in/guillermo-guirales/',
         message: `"I have had the privilege of knowing and working with Maribel for several years, and during this
                     time, I have witnessed her exceptional skills and personal qualities firsthand.
                 <br/>
@@ -48,11 +44,12 @@ export const RECOMMENDATION_LIST: Recommendation[] = [
                 <br/>
                 I have no hesitation in recommending Maribel without reservation, and I am sure she will exceed
                     any expectations you may have."`,
-        profession: 'Senior Developer',
+        profession: 'Senior Developer'
     },
     {
-        author: 'Martin Quintero',
+        author: 'Martin Calderon',
         company: 'SoftwareOne',
+        linkedinUrl: 'https://www.linkedin.com/in/mhccortes/',
         message: `I have had the pleasure of working closely with Maribel, a remarkably talented software developer whose
                 dedication to excellence is truly inspiring. Maribel consistently demonstrates a keen intellect and
                 ingenuity in her approach to coding, always striving to implement solutions that adhere to the highest
@@ -74,6 +71,7 @@ export const RECOMMENDATION_LIST: Recommendation[] = [
     {
         author: 'Frederik Lefèvre',
         company: 'SoftwareOne',
+        linkedinUrl: 'https://www.linkedin.com/in/frederiklefevre/',
         message: `I had the pleasure of working with Maribel, and I can confidently say that she is an exceptional
                 professional. Maribel is driven and persistent, qualities that shine through in every project she
                 undertakes. Her determination to achieve the best results is truly inspiring.
