@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {faBriefcase, faEnvelope, faThumbsUp, faUser} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Home() {
     return (
@@ -18,22 +20,18 @@ export default function Home() {
                    href="/cv/Maribel_Gutierrez.pdf">Download Resume</a>
 
                 <div className="button-container flex-wrap justify-center mt-6">
-                    <div className="tooltip">
-                        <a href="/about" className="section-button">About Me</a>
-                        <span className="tooltiptext">Learn more about me</span>
-                    </div>
-                    <div className="tooltip">
-                        <a href="/projects" className="section-button">Projects</a>
-                        <span className="tooltiptext">View my work</span>
-                    </div>
-                    <div className="tooltip">
-                        <a href="/recommendations" className="section-button">Recommendations</a>
-                        <span className="tooltiptext">See what others say</span>
-                    </div>
-                    <div className="tooltip">
-                        <a href="/contact" className="section-button">Contact Me</a>
-                        <span className="tooltiptext">Get in touch</span>
-                    </div>
+
+                    <a href="/about" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faUser} width={15}
+                                                                                                                  height={15}/> About Me</a>
+
+                    <a href="/projects" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faBriefcase} width={15}
+                                                                                                                     height={15}/> Projects</a>
+
+                    <a href="/recommendations" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faThumbsUp} width={15}
+                                                                                           height={15}/> Recommendations</a>
+
+                    <a href="/contact" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faEnvelope} width={15}
+                                                                                   height={15}/> Contact Me</a>
                 </div>
             </div>
             <div className="profile--container--image">

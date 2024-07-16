@@ -132,9 +132,9 @@ h1 {
 }
 
 .section-button {
-    background-color: transparent;
-    border: 2px solid #FFC107; /* Yellow outline */
-    color: #FFC107; /* Yellow text */
+    background-color: #333333;
+    border: 2px solid #00BCD4; /* Yellow outline */
+    color: #00BCD4;
     padding: 15px 30px;
     margin: 10px;
     font-size: 1em;
@@ -146,8 +146,7 @@ h1 {
 }
 
 .section-button:hover {
-    background-color: #FFC107; /* Yellow background on hover */
-    color: #000000; /* Black text on hover */
+    background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
 
@@ -155,31 +154,4 @@ h1 {
     background-color: #FFB300; /* Slightly different yellow when active */
     color: #000000; /* Black text when active */
     transform: scale(0.95);
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position above the element */
-    left: 50%;
-    margin-left: -70px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
 }
