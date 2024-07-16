@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
     return (
@@ -15,15 +14,27 @@ export default function Home() {
                         Front-End and Fullstack developer. I have experience in industries such as software development,
                         industrial automation and also in the IoT.</p>
                 </div>
-                <button className="rounded md:w-40 p-2 mx-auto button--primary">Resume</button>
+                <a className="rounded md:w-40 p-2 mx-auto button--primary text-center font-bold" target="_blank"
+                   href="/cv/Maribel_Gutierrez.pdf">Download Resume</a>
 
-                <ul className="flex flex-wrap gap-3 justify-center text-lg mt-4 mx-auto section--list">
-                    <Link href="/about">About me</Link>
-                    <Link href="/project">Projects</Link>
-                    <Link href="/recommendation"
-                    >Recommendations</Link>
-                    <Link href="/contact">Contact me</Link>
-                </ul>
+                <div className="button-container flex-wrap justify-center mt-6">
+                    <div className="tooltip">
+                        <a href="/about" className="section-button">About Me</a>
+                        <span className="tooltiptext">Learn more about me</span>
+                    </div>
+                    <div className="tooltip">
+                        <a href="/projects" className="section-button">Projects</a>
+                        <span className="tooltiptext">View my work</span>
+                    </div>
+                    <div className="tooltip">
+                        <a href="/recommendations" className="section-button">Recommendations</a>
+                        <span className="tooltiptext">See what others say</span>
+                    </div>
+                    <div className="tooltip">
+                        <a href="/contact" className="section-button">Contact Me</a>
+                        <span className="tooltiptext">Get in touch</span>
+                    </div>
+                </div>
             </div>
             <div className="profile--container--image">
                 <Image className="profile--image w-[300px] md:w-[350px]" height={0} width={0}
