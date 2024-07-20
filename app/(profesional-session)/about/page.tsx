@@ -111,11 +111,11 @@ export default function AboutPage() {
             <section className={`${style["main--section"]} flex flex-col md:flex-row gap-3`}>
                 <div className="info">
                     <h1 className={style.subtitle}>About me</h1>
-                    <p>I'am Maribel, a passionate frontend developer with over 6 years of experience in crafting
+                    <p>I am a passionate fullstack developer specialized in the front door with over 6 years of experience in crafting
                         visually
-                        stunning and highly functional web applications. My journey began with a foundation in
+                        attractive and highly functional web applications. My journey began in the
                         electronic
-                        engineering, which provided me with a deep understanding of both hardware and software. However,
+                        engineering industry, which provided me with a deep understanding of both hardware and software development. However,
                         it
                         was in the realm of frontend development where I truly found my calling.
                     </p>
