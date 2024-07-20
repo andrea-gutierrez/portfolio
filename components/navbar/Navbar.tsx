@@ -13,7 +13,7 @@ interface NavItems {
 const navItems: NavItems[] = [
     {path: '/', text: 'Home'},
     {path: '/about', text: 'About'},
-    {path: '/projects', text: 'Projects'},
+    {path: '/project', text: 'Projects'},
     {path: '/recommendation', text: 'Recommendations'},
     {path: '/contact', text: 'Contact'},
 ]
@@ -42,7 +42,7 @@ export const Navbar = () => {
             <div className={`${navbar && 'hidden'} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
                 <div className="text-sm lg:flex-grow">
                     {
-                        navItems.map((navItem, i) => (
+                        navItems.map(navItem => (
                             <ActiveLink key={navItem.path} {...navItem} />
                         ))
                     }

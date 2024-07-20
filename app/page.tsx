@@ -24,7 +24,7 @@ export default function Home() {
                     <a href="/about" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faUser} width={15}
                                                                                                                   height={15}/> About Me</a>
 
-                    <a href="/projects" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faBriefcase} width={15}
+                    <a href="/project" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faBriefcase} width={15}
                                                                                                                      height={15}/> Projects</a>
 
                     <a href="/recommendations" className="section-button flex flex-row items-center gap-2"><FontAwesomeIcon icon={faThumbsUp} width={15}
