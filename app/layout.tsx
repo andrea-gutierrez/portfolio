@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {Roboto_Condensed} from "next/font/google";
 
+import { Analytics } from "@vercel/analytics/react"
+
 import "./globals.css";
 
 const inter = Roboto_Condensed({subsets: ["latin"]});
@@ -18,6 +20,7 @@ export default function RootLayout({children}: Readonly<{
         <html lang="en">
         <body className={inter.className}>
         {children}
+        <Analytics />
         </body>
         </html>
     );
