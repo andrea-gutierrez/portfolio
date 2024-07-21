@@ -40,7 +40,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.project-details ul {
+.project-details ul, .project-details p {
     list-style: disc;
     margin-left: 20px;
     color: #DDDDDD;

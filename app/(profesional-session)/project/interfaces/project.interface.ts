@@ -1,11 +1,20 @@
 export interface ProjectDetails {
-    challenges: string[];
+    challenges: AdditionalDetails[];
     description: string;
-    features: string[];
-    images: {
-        alt: string;
-        src: string;
-    }[];
+    features: AdditionalDetails[];
+    impactOvercome: string;
     technologies: string[];
     title: string;
+    images: ImageDetails[];
+    hasGithub: boolean;
+}
+
+interface AdditionalDetails {
+    title: string;
+    description: string;
+}
+
+interface ImageDetails {
+    alt: string;
+    src: string;
 }

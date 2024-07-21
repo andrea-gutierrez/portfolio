@@ -6,7 +6,16 @@ import Image from "next/image";
 import {ProjectDetails} from "../interfaces/project.interface";
 import {useState} from "react";
 
-export default function ProjectCard({challenges, features, description, technologies, title, images}: ProjectDetails) {
+export default function ProjectCard({
+                                        challenges,
+                                        features,
+                                        description,
+                                        technologies,
+                                        title,
+                                        images,
+                                        impactOvercome,
+                                        hasGithub
+                                    }: ProjectDetails) {
     const [isShowingDetails, setIsShowingDetails] = useState<boolean>(false);
 
     function onShowDetails() {
@@ -23,13 +32,18 @@ export default function ProjectCard({challenges, features, description, technolo
                     </p>
                     <button className={style["show-project-button"]} onClick={() => onShowDetails()}>Show Details
                     </button>
-                    <div className={`${style["project-details"]}`} style={{display: !isShowingDetails ? 'none' : 'block'}}>
+                    <div className={`${style["project-details"]}`}
+                         style={{display: !isShowingDetails ? 'none' : 'block'}}>
+                        <div className="project-overcomes">
+                            <h4 className={style["section-subtitle"]}>Impact and Overcome</h4>
+                            <p>{impactOvercome}</p>
+                        </div>
                         <div className="project-features">
                             <h4 className={style["section-subtitle"]}>Features</h4>
                             <ul>
                                 {
                                     features.map(item => (
-                                        <li key={item}>{item}</li>
+                                        <li key={item.title}>{item.title}: {item.description}</li>
                                     ))
                                 }
                             </ul>
@@ -39,7 +53,7 @@ export default function ProjectCard({challenges, features, description, technolo
                             <ul>
                                 {
                                     challenges.map(item => (
-                                        <li key={item}>{item}</li>
+                                        <li key={item.title}>{item.title}: {item.description}</li>
                                     ))
                                 }
                             </ul>
@@ -63,14 +77,18 @@ export default function ProjectCard({challenges, features, description, technolo
                                 ))
                             }
                         </div>
-                        <div className="flex flex-row gap-3 justify-between">
-                            <a href="https://project-link.com" className={style["project-link"]} target="_blank">View
-                                Live
-                                Project</a>
-                            <a href="https://github.com/project-repo" className={style["project-link"]} target="_blank">View
-                                Code on
-                                GitHub</a>
-                        </div>
+                        {
+                            hasGithub &&
+                            <div className="flex flex-row gap-3 justify-between">
+                                <a href="https://project-link.com" className={style["project-link"]} target="_blank">View
+                                    Live
+                                    Project</a>
+                                <a href="https://github.com/project-repo" className={style["project-link"]}
+                                   target="_blank">View
+                                    Code on
+                                    GitHub</a>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

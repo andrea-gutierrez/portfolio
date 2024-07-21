@@ -1,6 +1,6 @@
 import ProjectCard from "@/app/(profesional-session)/project/components/ProjectCard";
 
-import {PROJECT_LIST} from "@/app/(profesional-session)/project/constants";
+import {PROJECT_INFO_LIST} from "@/app/(profesional-session)/project/constants";
 
 import style from './project.module.css';
 
@@ -13,7 +13,7 @@ export default function ProjectPage() {
                 abilities.</p>
             <div className={style["projects-grid"]}>
                 {
-                    PROJECT_LIST.map(project => (
+                    PROJECT_INFO_LIST.map(project => (
                         <ProjectCard key={project.title} {...project} />
                     ))
                 }
