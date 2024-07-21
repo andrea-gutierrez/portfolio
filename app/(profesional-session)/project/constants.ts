@@ -18,7 +18,20 @@ export const PROJECT_INFO_LIST: ProjectDetails[] = [
             }
         ],
         description: `The Eira project was developed to address the critical shortage of respiratory equipment in Colombia during the COVID-19 pandemic. With global supply chains disrupted and local manufacturing constraints, our team took inspiration from an MIT design to create a locally-produced solution. This project seamlessly combined hardware engineering with advanced frontend development to deliver an innovative healthcare tool.`,
-        features: [],
+        features: [
+            {
+                description: `The electronic device featured an adjustable control panel that allowed medical professionals to set and modify air pressure levels according to individual patient needs.`,
+                title: `Customizable Air Pressure Control`
+            },
+            {
+                description: `The mobile application, developed with Flutter, provided a graphical interface to visualize patient data from the device. This enabled doctors to monitor and respond to patient conditions effectively.`,
+                title: `Real-time Data Visualization`
+            },
+            {
+                description: `A robust backend was implemented to ensure all patient data was stored securely and could be accessed for future analysis and reference.`,
+                title: `Secure Data Storage`
+            }
+        ],
         hasGithub: false,
         images: [
             {
@@ -27,7 +40,11 @@ export const PROJECT_INFO_LIST: ProjectDetails[] = [
             },
             {
                 alt: 'Electronic Device',
-                src: '/images/projects/eira/electronic.jpeg',
+                src: '/images/projects/eira/electronic.jpg',
+            },
+            {
+                alt: 'Testing the device',
+                src: '/images/projects/eira/test_device.jpg'
             }
         ],
         impactOvercome: `Although Eira was not publicly deployed, it garnered positive reviews from medical professionals at the General Hospital in Medellín, Colombia. The project passed all electromagnetism safety tests in accordance with Colombian regulations, affirming its quality and reliability as a healthcare solution.`,
@@ -35,9 +52,11 @@ export const PROJECT_INFO_LIST: ProjectDetails[] = [
             'Flutter',
             'C++',
             'MySQL',
-            'EagleCAD'
+            'EagleCAD',
+            'ChartJS'
         ],
-        title: `Eira: Bridging Hardware and Frontend Solutions During the Pandemic`
+        title: `Eira: Bridging Hardware and Frontend Solutions During the Pandemic`,
+        videoDemo: '/videos/eira_demo.mp4'
     },
     {
         challenges: [
@@ -66,7 +85,24 @@ export const PROJECT_INFO_LIST: ProjectDetails[] = [
             }
         ],
         hasGithub: false,
-        images: [],
+        images: [
+            {
+                alt: 'Electronic Design',
+                src: '/images/projects/heat_equipment/electronic_design.png'
+            },
+            {
+                alt: 'Heat Device',
+                src: '/images/projects/heat_equipment/heat_device.JPG'
+            },
+            {
+                alt: 'Graph',
+                src: '/images/projects/heat_equipment/graph.png'
+            },
+            {
+                alt: 'User Interface',
+                src: '/images/projects/heat_equipment/user_interface.png'
+            }
+        ],
         impactOvercome: `The Heat Equipment project significantly enhances the study of heat transfer, providing researchers and students with a powerful tool for analysis and experimentation. By leveraging IoT technology and advanced frontend design, the project demonstrates the potential of modern technology to transform educational and research methodologies.`,
         technologies: [
             'C++',

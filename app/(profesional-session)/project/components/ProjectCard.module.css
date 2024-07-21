@@ -105,3 +105,11 @@
 .project-media img:hover {
     transform: scale(2.5);
 }
+
+.project-video {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -2,11 +2,12 @@ export interface ProjectDetails {
     challenges: AdditionalDetails[];
     description: string;
     features: AdditionalDetails[];
+    hasGithub: boolean;
+    images: ImageDetails[];
     impactOvercome: string;
     technologies: string[];
     title: string;
-    images: ImageDetails[];
-    hasGithub: boolean;
+    videoDemo?: string;
 }
 
 interface AdditionalDetails {

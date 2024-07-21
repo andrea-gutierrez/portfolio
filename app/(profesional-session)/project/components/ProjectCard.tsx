@@ -14,7 +14,8 @@ export default function ProjectCard({
                                         title,
                                         images,
                                         impactOvercome,
-                                        hasGithub
+                                        hasGithub,
+                                        videoDemo
                                     }: ProjectDetails) {
     const [isShowingDetails, setIsShowingDetails] = useState<boolean>(false);
 
@@ -30,6 +31,13 @@ export default function ProjectCard({
                     <p className={style["project-description"]}>
                         {description}
                     </p>
+                    {
+                        videoDemo &&
+                        <video className={style["project-video"]} controls>
+                            <source src="/videos/eira_demo.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+                    }
                     <button className={style["show-project-button"]} onClick={() => onShowDetails()}>Show Details
                     </button>
                     <div className={`${style["project-details"]}`}
@@ -68,7 +76,7 @@ export default function ProjectCard({
                                 }
                             </ul>
                         </div>
-                        <div className={style["project-media"]}>
+                        <div className={`${style["project-media"]} flex-wrap`}>
                             {
                                 images.map(item => (
                                     <Image key={item.src} src={item.src}
